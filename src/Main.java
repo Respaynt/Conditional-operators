@@ -1,15 +1,97 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
-
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+        int age1 = 28;
+        int age2 = 17;
+        if (age1 >= 18) {
+            System.out.println("Если возраст человека равен " + age1 + " он cовершеннолетний");
         }
+        if (age2 < 18) {
+            System.out.println("Если возраст человека равен " + age2 + " он не достиг совершенолетия, " +
+                    " нужно немного подождать");
+        }
+        int temperature1 = 4;
+        int temperature2 = 12;
+        if (temperature1 < 5) {
+            System.out.println("На улице " + temperature1 + " градуса, нужно надеть шапку");
+        }
+        if (temperature2 >= 5) {
+            System.out.println("На улице " + temperature2 + " градусов, можно идти без шапки");
+        }
+
+
+        int speed1 = 70;
+        int speed2 = 40;
+        if (speed1 > 60){
+            System.out.println("Если скорость " + speed1 + ", то придется заплатить штраф");
+        }
+        if (speed2 <= 60){
+            System.out.println("Если скорость " + speed2 + ", то можно ездить спокойно ");
+        }
+
+
+        int kindergarten = 3;
+        int school = 9;
+        int university = 20;
+        int work = 25;
+        if (kindergarten >= 2 && kindergarten <= 6) {
+            System.out.println("Если возраст человека равен " + kindergarten + ", то ему нужно ходить в дет сад");
+        }
+        if (school >= 7 && school <= 17){
+            System.out.println("Если возраст человека равен " + school + ", то ему нужно ходить в школу");
+        }
+        if (university >= 18 && university <= 24){
+            System.out.println("Если возраст человека равен " + university + ", то ему нужно ходить в университет");
+        }
+        if (work > 24){
+            System.out.println("Если возраст человека равен " + work + ", то ему пора ходить на работу");
+        }
+
+
+        int baby = 4;
+        int child = 8;
+        int teenager = 15;
+        if (baby < 5){
+            System.out.println("Если возраст ребенка равен " + baby + ", то он не может кататся на аттракционе");
+        }
+        if (child > 5 && child < 14){
+            System.out.println("Если возраст ребенка равен " + child + ", то он может кататся только в сопровождении" +
+                    " взрослого. Если взрослого нет то кататся нельзя.");
+        }
+        if (teenager > 14){
+            System.out.println("Если возраст ребенка равен " + teenager + ", то он может кататся без сопровождения " +
+                    "взрослого ");
+        }
+
+        int seatNumber = 75;
+        if (seatNumber <= 60) {
+            System.out.println(" Есть сидячие места");
+        }else {
+            if (seatNumber > 60 && seatNumber <= 102) {
+                System.out.println("Есть только стоячие места");
+            } else {
+                System.out.println("Мест в вагоне нет");
+            }
+        }
+
+
+        int one = 5;
+        int two = 9;
+        int three =7;
+        if (one > two && one > three){
+            System.out.println("Первое число самое большое");
+        }else if (two > one && two > three){
+            System.out.println("Второе число самое большое");
+        }else {
+            System.out.println("Третье число самое большое");
+        }
+
+
+
+
+
+
+
+
+
     }
 }
